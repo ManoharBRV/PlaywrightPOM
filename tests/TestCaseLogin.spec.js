@@ -5,44 +5,14 @@ const p = require("../OrangeHRMLoginPage/HomePage");
 
 test("Test Case 1 - Good", async({page})=>
 {
-    console.log("Test Case One Running");
+    await page.goto("https://www.amazon.in/");
+    console.log("Test Case One Amazon");
 
 })
 
-test.skip("Test Case 2 - Skip", async({page})=>
+test("Test Case 2 - Good", async({page})=>
 {
-    console.log("Test Case Two Skipped");
-
-})
-
-test("Test Case 3 - Good", async({page})=>
-{
-    console.log("Test Case Three Running");
-
-})
-
-test("Test Case 4 - Good", async({page})=>
-{
-    console.log("Test Case Four Running");
-
-})
-
-test.skip("Test Case 5 - Skip", async({page})=>
-{
-    console.log("Test Case Five Skipped");
-
-})
-
-test("Test Case 6 - Assertions", async({page})=>
-{
-    expect("Yes").toBe("No");
-    console.log("Test Case Six Running");
-
-})
-
-test("Test Case 7 - Good", async({page})=>
-{
-    expect("Orange").toBe("Orange");
-    console.log("Test Case Seven Running");
+    await page.goto("https://www.ebay.com/");
+    console.log("Test Case Two Ebay");
 
 })
